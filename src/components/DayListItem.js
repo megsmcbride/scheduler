@@ -12,16 +12,16 @@ export default function DayListItem(props) {
     if (props.spots === 0) {
       return "no spots remaining";
     } else if (props.spots === 1) {
-      return "1 spot remaining"
+      return "1 spot remaining";
     } else {
-      return `${props.spots} spots remaining`
+      return `${props.spots} spots remaining`;
     }
 
-  }
+  };
 
   return (
-    <li onClick={() => props.setDay(props.name)} className={dayClass}>
-      <h2 className="text--regular">{props.name}</h2> 
+    <li className={dayClass} onClick={() => props.setDay(props.name)} selected={props.selected}>
+      <h2 className="text--regular">{props.name}</h2>
       <h3 className="text--light">{formatSpots(props.spots)}</h3>
     </li>
   );
