@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from 'react'
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import "index.scss";
@@ -172,19 +172,35 @@ storiesOf("Appointment", module)
       onConfirm={action("onConfirm")}
 
     />)
-  .add("Status", () => <Status message='Deleting'/>)
-  .add("Error", () => <Error message='Could not delete appointment' onClose={action('onClose')}/>)
+  .add("Status", () => <Status message='Deleting' />)
+  .add("Error", () => <Error message='Could not delete appointment' onClose={action('onClose')} />)
   .add("Create", () =>
-  <Form
-  interviewers={interviewers}
-  onSave={action("onSave")}
-  onCancel={action("onCancel")}
-  />)
+    <Form
+      interviewers={interviewers}
+      onSave={action("onSave")}
+      onCancel={action("onCancel")}
+    />)
   .add("Edit", () =>
     <Form
-    student='Megan'
-    interviewers={interviewers}
-    interviewer={2}
-    onSave={action("onSave")}
-    onCancel={action("onCancel")}
+      student='Megan'
+      interviewers={interviewers}
+      interviewer={2}
+      onSave={action("onSave")}
+      onCancel={action("onCancel")}
     />)
+  .add("Appointment Empty", () => (
+    <Fragment>
+      <Appointment id={1} time="4pm" />
+      <Appointment time="5pm" />
+    </Fragment>
+  ))
+  .add("Appointment Booked", () => (
+    <Fragment>
+      <Appointment
+        id={1}
+        time="4pm"
+        interview={{ student: "Lydia Miller-Jones", interviewer }}
+      />
+      <Appointment time="5pm" />
+    </Fragment>
+  ))
