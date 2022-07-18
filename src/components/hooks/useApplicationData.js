@@ -80,6 +80,7 @@ export default function useApplicationData(props) {
       setState({
         ...state,
         appointments,
+        days
       });
     
     });
