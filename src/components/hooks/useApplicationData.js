@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 
 
@@ -10,6 +10,8 @@ export default function useApplicationData(props) {
   });
   
   const updateSpots = ((n) => {
+  
+
    const currentDay = state.day
   
    const days = state.days.map(day => {
@@ -28,7 +30,7 @@ export default function useApplicationData(props) {
     useEffect(() => {
       Promise.all([
         axios.get("/api/days"),
-        axios.get("api/appointments"),
+        axios.get("/api/appointments"),
         axios.get("/api/interviewers"),
       ]).then((all) => {
         setState((prev) => ({
@@ -51,7 +53,10 @@ export default function useApplicationData(props) {
       [id]: appointment,
     };
 
-    const days = updateSpots(-1)
+    let days = state.days;
+    if (!state.appointments[id].interview) {
+      days = updateSpots(-1)
+    }
 
     
     return axios.put(`/api/appointments/${id}`, { interview }).then(() => {
