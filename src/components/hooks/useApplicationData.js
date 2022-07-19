@@ -13,7 +13,7 @@ export default function useApplicationData(props) {
   
 
    const currentDay = state.day
-  
+   
    const days = state.days.map(day => {
      if(day.name === currentDay) {
        day.spots += n
