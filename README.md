@@ -6,7 +6,7 @@ Interview Scheduler is a single-page application built with React that allows us
 ## Installation
 
 - Install dependencies with `npm install`
-- Fork and clone the Scheduler API project outside of the Scheduler project directory.
+- Fork and clone the [Scheduler API](https://github.com/lighthouse-labs/scheduler-api)  project outside of the Scheduler project directory.
 
 ## Running Webpack Development Server
 
