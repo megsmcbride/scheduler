@@ -52,41 +52,41 @@ npm run storybook
 
 ![Weekday Page](https://github.com/megsmcbride/scheduler/blob/master/docs/images/day-interview-slots.png)
 ```sh
-Weekday Page
+^Weekday Page
 ```
 
 ![Create Interview](https://github.com/megsmcbride/scheduler/blob/master/docs/images/create-interview.png)
 ```sh
-Book interview form, save to confirm booking or cancel
+^Book interview form, save to confirm booking or cancel
 ```
 
 ![Booked Interview](https://github.com/megsmcbride/scheduler/blob/master/docs/images/day-interview-slots.png)
 ```sh
-Booked interview slot, edit details or delete booking
+^Booked interview slot, edit details or delete booking
 ```
 
 ![Delete Confirmation](https://github.com/megsmcbride/scheduler/blob/master/docs/images/delete-confirmation.png)
 ```sh
-Deleting an interview confirmation, cancel or confirm
+^Deleting an interview confirmation, cancel or confirm
 ```
 
 ![Loading Screen - Save](https://github.com/megsmcbride/scheduler/blob/master/docs/images/saving-loading.png)
 ```sh
-Loading screen when saving interview
+^Loading screen when saving interview
 ```
 
 ![Loading Screen - Delete](https://github.com/megsmcbride/scheduler/blob/master/docs/images/delete-loading.png)
 ```sh
-Loading screen when deleting interview
+^Loading screen when deleting interview
 ```
 
 
 ![Create Interview validation - Student](https://github.com/megsmcbride/scheduler/blob/master/docs/images/name-validation.png)
 ```sh
-Student name input validation
+^Student name input validation
 ```
 
 ![Create Interview validation - Interviewer](https://github.com/megsmcbride/scheduler/blob/master/docs/images/interviewer-validation.png)
 ```sh
-Interviewer selected validation
+^Interviewer selected validation
 ```
