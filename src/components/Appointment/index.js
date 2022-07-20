@@ -86,13 +86,13 @@ export default function Appointment(props) {
         />
       )}
       {mode === ERROR_DELETE && (
-        <Error 
-        message={"Could not delete appointment"} 
-        onClose={() => back()}/>
+        <Error
+          message={"Could not delete appointment"}
+          onClose={() => back()} />
       )}
-      {mode === ERROR_SAVE && (<Error 
-      message={"Could not save appointment"} 
-      onClose={() => back()}/>)}
+      {mode === ERROR_SAVE && (<Error
+        message={"Could not save appointment"}
+        onClose={() => back()} />)}
     </article>
   );
 }
