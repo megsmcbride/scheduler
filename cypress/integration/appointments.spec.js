@@ -3,7 +3,7 @@ const { CYCLIC_KEY } = require("@storybook/addon-actions");
 describe("Appointments", () => {
   beforeEach(() => {
     cy.request("GET", "/api/debug/reset");
-
+    
     cy.visit("/");
 
     cy.contains("Monday");
