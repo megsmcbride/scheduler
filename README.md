@@ -60,7 +60,7 @@ npm run storybook
 ^Book interview form, save to confirm booking or cancel
 ```
 
-![Booked Interview](https://github.com/megsmcbride/scheduler/blob/master/docs/images/day-interview-slots.png)
+![Booked Interview](https://github.com/megsmcbride/scheduler/blob/master/docs/images/created-interview.png)
 ```sh
 ^Booked interview slot, edit details or delete booking
 ```
